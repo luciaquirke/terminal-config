@@ -1,2 +1,2 @@
 # terminal-config
-My terminal setup
+My terminal setup with Hyper and Oh My Zsh

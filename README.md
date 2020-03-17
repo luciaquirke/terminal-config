@@ -16,3 +16,5 @@ Install pure theme via npm:
 ```
 $ npm install --global pure-prompt
 ```
+
+Install zsh-autosuggestions and zsh-syntax-highlighting via homebrew

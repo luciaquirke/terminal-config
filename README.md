@@ -11,3 +11,8 @@ And Hyper via website:
 
 https://hyper.is/#installation
 
+Install pure theme via npm:
+
+```
+$ npm install --global pure-prompt
+```

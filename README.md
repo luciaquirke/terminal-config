@@ -60,6 +60,6 @@ And commenting out the line
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 ```
 
-I don't really know why this worked because I don't recall ever installing the virtualenv plugin.
+I think this plugin might come with oh-my-zsh by default or something because I don't recall ever installing the virtualenv plugin.
 
 

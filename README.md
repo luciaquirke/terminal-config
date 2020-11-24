@@ -1,5 +1,5 @@
 # terminal-config
-#### My terminal setup with Hyper and Oh My Zsh
+### My terminal setup with Hyper and Oh My Zsh
 
 
 Install Oh My Zsh via curl:
@@ -29,7 +29,7 @@ https://hyper.is/#installation
 
 This repo's Hyper settings file *.hyper.js* may then be used.
 
-#### Problems I've Had
+### Problems I've Had
 
 ##### Zsh error 
 

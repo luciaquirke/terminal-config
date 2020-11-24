@@ -20,7 +20,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/p
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 ```
 
-This repo's ZSH settings file *.zshrc* may then be used.
+This repo's Zsh settings file *.zshrc* may then be used.
 
 Hyper may be added via website:
 

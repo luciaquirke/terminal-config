@@ -26,4 +26,4 @@ Hyper may be added via website:
 
 https://hyper.is/#installation
 
-This repo's Hyper settings file may then be used.
+This repo's Hyper settings file *.hyper.js* may then be used.

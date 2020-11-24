@@ -31,7 +31,7 @@ This repo's Hyper settings file *.hyper.js* may then be used.
 
 #### Problems I've Had
 
-Zsh error 
+###### Zsh error 
 
 ``` 
 Insecure completion-dependent directories detected:
@@ -45,3 +45,21 @@ Solved by changing the ownership of the directories:
 chmod 755 /usr/local/share/zsh
 chmod 755 /usr/local/share/zsh/site-functions
 ```
+
+###### Python virtual environment indicator not showing in prompt
+
+Solved by navigating to the virtualenv plugin config file
+
+```
+vim ~/.oh-my-zsh/plugins/virtualenv/virtualenv.plugin.zsh
+```
+
+And commenting out the line
+
+```
+export VIRTUAL_ENV_DISABLE_PROMPT=1
+```
+
+I don't really know why this worked because I don't recall ever installing the virtualenv plugin.
+
+

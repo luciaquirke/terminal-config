@@ -28,3 +28,20 @@ Hyper may be added via website:
 https://hyper.is/#installation
 
 This repo's Hyper settings file *.hyper.js* may then be used.
+
+#### Problems I've Had
+
+Zsh error 
+
+``` 
+Insecure completion-dependent directories detected:
+drwxrwxr-x  7 name  admin  224 date /usr/local/share/zsh
+drwxrwxr-x  4 name  admin  128 date /usr/local/share/zsh/site-functions
+```
+
+Solved by changing the ownership of the directories:
+
+```
+chmod 755 /usr/local/share/zsh
+chmod 755 /usr/local/share/zsh/site-functions
+```

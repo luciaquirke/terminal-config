@@ -1,0 +1,74 @@
+[user]
+	# email = MY_EMAIL
+	# name = MY_NAME
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[alias]
+  # Basic
+  d = diff
+  st = status -s
+  b10 = for-each-ref --sort=-committerdate --count=10 --format="%(refname:short)" refs/heads/
+  b20 = for-each-ref --sort=-committerdate --count=20 --format="%(refname:short)" refs/heads/
+  cl = clone
+  co = checkout
+  cob = checkout -b
+	ci = commit -v
+  cif = commit -v --fixup
+  civ = commit -v --no-verify
+  br = branch
+  dc = diff --cached
+  cp = cherry-pick
+  unstage = reset HEAD --
+  ec = config --global -e # Edit config
+  amend = commit -a --amend
+  p = pull --rebase
+  s = log -p --first-parent -m
+  recent = for-each-ref --count=10 --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
+  # Branches
+  branchauthors = "! for branch in `git branch -r | grep -v /HEAD`;do echo `git log -n 1 --format=\"%ai %ar by %an\" $branch` \t$branch; done | sort -r"
+  # Stash
+  sl = stash list
+  sa = stash apply
+  ss = stash save
+  # Server
+  up = "!git pull --rebase --prune"
+  # Outgoing/Incoming
+  out = !sh -c 'git fetch && git log --graph --boundary --left-right --cherry-pick --decorate HEAD..FETCH_HEAD'
+  inc = !sh -c 'git fetch && git log --graph --boundary --left-right --cherry-pick --decorate FETCH_HEAD..HEAD'
+  sync = "!sh -c 'git checkout --quiet --detach HEAD && \
+                    git fetch origin master:master develop:develop ; \
+                    git checkout --quiet -'"
+  # List aliases
+  la = "!git config -l | grep alias | cut -c 7-"
+  # Log
+  ls = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]%Creset" --decorate --graph --date=short
+  lo = log --pretty=format:"%C(yellow)%H\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]%Creset" --decorate --graph --date=short
+  ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]%Creset" --decorate --numstat --graph
+  lnc = log --pretty=format:"%h\\ %s\\ [%cn]%Creset" --graph # no colours
+  lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]%Creset" --decorate --date=short
+  ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]%Creset" --decorate --date=relative
+  lc = "!git ll -1" # Log last commit
+  lr  = "!f() { git ll "$1"^.."$1"; }; f" # Log of commit xxx
+  lt = "!git ls --all" # Log all
+  # Branches
+  # list branches sorted by last modified
+  b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
+  # Files
+  filelog = log -u # file history of a file
+  fl = log -u
+  f = "!git ls-files | grep -i" # find a filepath
+  # Grep
+  grep = grep -Ii # search codebase for string
+  gr = grep -Ii
+  gra = "!f() { A=$(pwd) && TOPLEVEL=$(git rev-parse --show-toplevel) && cd $TOPLEVEL && git grep --full-name -In $1 | xargs -I{} echo $TOPLEVEL/{} && cd $A; }; f" # grep from root folder
+  # Merge aliases
+  ours = "!f() { git co --ours $@ && git add $@; }; f"
+  theirs = "!f() { git co --theirs $@ && git add $@; }; f"q
+
+[pull]
+	rebase = true
+[fetch]
+	prune = true

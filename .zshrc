@@ -19,3 +19,7 @@ source $ZSH/oh-my-zsh.sh
 # Add pure prompt
 autoload -U promptinit; promptinit
 prompt pure
+
+# Aliases
+alias zsh_reload='source ~/.zshrc'
+alias kill_node='killall -KILL node'

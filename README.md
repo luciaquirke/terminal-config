@@ -1,5 +1,5 @@
 # terminal-config
-### My terminal setup with Hyper and Oh My Zsh
+### Terminal setup with Oh My Zsh
 
 
 Install Oh My Zsh via curl:
@@ -22,12 +22,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/
 ```
 
 This repo's Zsh settings file *.zshrc* may then be used.
-
-Hyper may be added via website:
-
-https://hyper.is/#installation
-
-This repo's Hyper settings file *.hyper.js* may then be used.
 
 ### Problems I've Had
 

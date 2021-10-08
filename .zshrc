@@ -23,3 +23,8 @@ prompt pure
 alias zsh_reload='source ~/.zshrc'
 alias kill_node='killall -KILL node'
 alias g='git'
+
+# Configure pyenv
+# export PYENV_ROOT="$HOME/.pyenv"
+# export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init --path)"

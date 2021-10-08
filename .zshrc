@@ -22,3 +22,4 @@ prompt pure
 # Aliases
 alias zsh_reload='source ~/.zshrc'
 alias kill_node='killall -KILL node'
+alias g='git'

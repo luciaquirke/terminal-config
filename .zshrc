@@ -1,7 +1,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/luciaquirke/.oh-my-zsh"
 
-# Superseded by a Hyper theme
 ZSH_THEME=""
 
 # Comment the following line to disable command auto-correction.

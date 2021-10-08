@@ -56,4 +56,8 @@ export VIRTUAL_ENV_DISABLE_PROMPT=1
 
 I think this plugin might come with oh-my-zsh by default or something because I don't recall ever installing the virtualenv plugin.
 
+#### Need to install brew in a multi-user setup
+
+Follow [this guide](https://stackoverflow.com/a/55021458). Run `echo $PATH` and check that the first path matches the path of your homebrew installation.
+
 

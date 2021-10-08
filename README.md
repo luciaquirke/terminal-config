@@ -58,6 +58,6 @@ I think this plugin might come with oh-my-zsh by default or something because I 
 
 #### Need to install brew in a multi-user setup
 
-Follow [this guide](https://stackoverflow.com/a/55021458). Run `echo $PATH` and check that the first path matches the path of your homebrew installation.
+You can follow [this guide](https://stackoverflow.com/a/55021458) - you basically need to install homebrew somewhere on your local account then update your $PATH to point to its location. Run `echo $PATH` to check that the first path matches the path of your homebrew installation.
 
 

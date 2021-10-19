@@ -27,3 +27,10 @@ alias kill_node='killall -KILL node'
 # export PYENV_ROOT="$HOME/.pyenv"
 # export PATH="$PYENV_ROOT/bin:$PATH"
 # eval "$(pyenv init --path)"
+
+# Python aliases
+alias mkvenv="python3 -m venv env"
+alias entervenv="source env/bin/activate"
+alias pyarn="pip install -r requirements.txt # install all requirements"
+alias pyfreeze="pip freeze > requirements.txt # save all requirements"
+alias pyinit="mkvenv && env >> .gitignore"

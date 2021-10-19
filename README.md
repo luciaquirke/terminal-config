@@ -54,10 +54,12 @@ And commenting out the line
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 ```
 
-I think this plugin might come with oh-my-zsh by default or something because I don't recall ever installing the virtualenv plugin.
-
 #### Need to install brew in a multi-user setup
 
 You can follow [this guide](https://stackoverflow.com/a/55021458) - you basically need to install homebrew somewhere on your local account then update your $PATH to point to its location. Run `echo $PATH` to check that the first path matches the path of your homebrew installation.
+
+### Bonus
+
+For general mac setup improvements follow the tips in https://www.swyx.io/my-new-mac-setup-4ibi/
 
 

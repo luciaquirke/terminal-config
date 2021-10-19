@@ -1,5 +1,5 @@
 # terminal-config
-### Zsh Terminal setup with Oh My Zsh
+### Zsh terminal setup with Oh My Zsh
 
 
 Install Oh My Zsh via curl:

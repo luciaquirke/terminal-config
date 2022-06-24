@@ -40,6 +40,12 @@ chmod 755 /usr/local/share/zsh
 chmod 755 /usr/local/share/zsh/site-functions
 ```
 
+#### M1 incompatibility with pure prompt
+
+For M1 you need to clone pure prompt and add the path to your ~/.zshrc like so:
+
+https://github.com/sindresorhus/pure/issues/584#issuecomment-775859718
+
 #### Python virtual environment indicator not showing in prompt
 
 Solved by navigating to the virtualenv plugin config file

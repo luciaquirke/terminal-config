@@ -23,6 +23,10 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/
 
 This repo's Zsh settings file *.zshrc* may then be used.
 
+### Terminal emulator
+
+I use iTerm without custom configuration. iTerm supports side by side terminal windows.
+
 ### Problems I've Had
 
 #### Zsh error 

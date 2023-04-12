@@ -16,6 +16,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # Add pure prompt
+fpath+=$HOME/.zsh/pure
 autoload -U promptinit; promptinit
 prompt pure
 

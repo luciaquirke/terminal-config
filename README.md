@@ -44,11 +44,9 @@ chmod 755 /usr/local/share/zsh
 chmod 755 /usr/local/share/zsh/site-functions
 ```
 
-#### M1 incompatibility with pure prompt
+#### Apple Silicon incompatibility with pure prompt
 
-For M1 you need to clone pure prompt and add the path to your ~/.zshrc like so:
-
-https://github.com/sindresorhus/pure/issues/584#issuecomment-775859718
+For Apple Silicon I needed to update the path in ~/.zshrc. Fix included in default .zshrc
 
 #### Python virtual environment indicator not showing in prompt
 

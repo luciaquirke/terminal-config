@@ -24,9 +24,9 @@ alias zsh_reload='source ~/.zshrc'
 alias kill_node='killall -KILL node'
 
 # Configure pyenv
-# export PYENV_ROOT="$HOME/.pyenv"
-# export PATH="$PYENV_ROOT/bin:$PATH"
-# eval "$(pyenv init --path)"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
 
 # Python aliases
 alias mkvenv="python3 -m venv env"
